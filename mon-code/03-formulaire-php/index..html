@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom Dia Formulaire!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="post" action="reponse.php">
+        <fieldset>
+            <p><select name="genre" id="genre">
+                    <option value="Monsieur">Mr</option>
+                    <option value="Madame">M</option>
+                    <option value="Mademoiselle" selected >Mlle</option>
+                </select>
+                Nom : <input type="text" name="nom" id="nom" placeholder="Entrez votre nom"></p>
+            <p>Prénom : <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prenom"></p>
+            <p>Votre année de naissance : <input type="number" name="année" id="dateDeNaissance"
+                    placeholder="Année de naissance"></p>
+            <p>Donnez un identifiant : <input type="email" name="identifiant" id="identifiant"
+                    placeholder="Entrez un identifiant"></p>
+            <p>Donnez un mot de passe : <input type="password" name="motDePasse" id="motDePasse"
+                    placeholder="Entrez un mot de passe"></p>
+            <p>Sexe : <input type="radio" name="sexe" id="masculin" value="M">Masculin
+                <input type="radio" name="sexe" id="feminin" checked value="F">Féminin
+            </p>
+            <p><input type="checkbox" name="php" id="php" value="Oui">Je débute en PHP</p>
+            <p><button>Envoyer</button></p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

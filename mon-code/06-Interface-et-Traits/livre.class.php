@@ -11,5 +11,18 @@ class Livre{
         $this -> _isbn = $isbn;
         $this -> _resume = $resume;
     }
+
+    public function getTitre():string{
+        return $this -> _titre;
+    }
+    public function getDateDeSortie():int{
+        return -> _dateDeSortie;
+    }
+    public function getIsbn():string{
+        return -> _isbn;
+    }
+    public function getResume():string{
+        return -> _resume;
+    }
     
 }
